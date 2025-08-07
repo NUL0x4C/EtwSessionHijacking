@@ -1,15 +1,3 @@
-/*
-
-ORCA : 8/21/2022
-
-Process Monitor version 3.85 uses a session called 'PROCMON TRACE'
-This attack will disable 'PROCMON TRACE' etw session and start a new
-fake one, leading to Process Monitor not getting any event back, this is
-working with the network events, but not on any other events (idk why) ...
-
-
-*/
-
 #include <Windows.h>
 #include <stdio.h>
 #include <conio.h>
@@ -213,3 +201,4 @@ int main() {
 	getchar();
 	return 0;
 }
+
